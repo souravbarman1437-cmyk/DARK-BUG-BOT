@@ -28,7 +28,7 @@ const store = makeInMemoryStore({
     })
 })
 
-let phoneNumber = "916295169659"
+let phoneNumber = "+918972751538"
 let owner = JSON.parse(fs.readFileSync('./database/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -370,3 +370,4 @@ if (e.includes("Timed Out")) return
 if (e.includes("Value not found")) return
 console.log('Caught exception: ', err)
 })
+
